@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  header {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav {
+    background-color: #333;
+    color: #fff;
+    text-align: right; /* Alinhar o texto à direita */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+  
+  section {
+    background-color: #a2a2a2;
+    width: 30%;
+    float: left;
+    border: 1px solid #373737;
+    box-sizing: border-box;
+    margin-right: 20px; /* Espaço horizontal entre as seções */
+    margin-left: 20px;
+    margin-top: 20px; /* Espaço vertical entre as seções */
+  }
+  
+  .section-title {
+    display: block;
+    text-align: right; /* Alinhar o texto à direita */
+    margin-bottom: 10px; /* Espaço entre o título e o conteúdo */
+    margin-left: 300px;
+    padding: 8px 12px;
+    background-color: #e7eaa4;
+    color: #000000;
+    border: 1px solid #1f1e1e;
+  
+  }
+  
+  /* Media Queries para tornar o layout responsivo */
+  
+  /* Tablet */
+  @media (max-width: 767px) {
+    nav li {
+      display: block;
+      margin: 10px 0;
+    }
+    
+    section {
+      width: 100%;
+      float: none;
+      margin-right: 0; /* Remover espaço horizontal nas seções */
+    }
+  }
+  
+  /* Celular */
+  @media (max-width: 480px) {
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+    nav ul {
+      display: none;
+    }
+    
+    nav a {
+      display: block;
+      padding: 10px;
+      background-color: #555;
+    }
+    
+    nav.active ul {
+      display: block;
+    }
+  }
